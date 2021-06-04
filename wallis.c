@@ -25,10 +25,17 @@ int main(void) {
 }
 
 float wallis_pi(int g){
-  if(g==1)
-    return 1.333;
-return (4*g*g/(4*g*g-1))*wallis_pi(g-1);
-  
+   int n = 2; 
+    int x = 1;  
+    float Answer = 1;
+
+    
+    for ( n ; n <= 1000; n += 2 )
+    {
+        Answer = Answer * ( (n*n) / ( x * (x + 2) ) );
+        x += 2;
+    }
+  return Answer;  
  }
   
     
