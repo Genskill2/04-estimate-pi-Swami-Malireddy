@@ -30,7 +30,7 @@ float wallis_pi(int g){
     float Answer = 1;
 
     
-    for ( n ; n <= 1000; n += 2 )
+    for ( n ; n <= g; n += 2 )
     {
         Answer = Answer * ( (n*n) / ( x * (x + 2) ) );
         x += 2;
