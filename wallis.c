@@ -27,9 +27,9 @@ int main(void) {
 float wallis_pi(int g){
   if(g==1)
     return 1.333;
- float pi=(4*g*g/(4*g*g-1))*wallis_pi(g-1);
+return (4*g*g/(4*g*g-1))*wallis_pi(g-1);
   
-  return pi;}
+ }
   
     
 
