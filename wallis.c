@@ -24,19 +24,17 @@ int main(void) {
   }
 }
 
-float wallis_pi(int g){
-   int n = 2; 
-    int x = 1;  
-    float Answer = 1;
-
-    
-    for ( n ; n <= g; n += 2 )
-    {
-        Answer = Answer * ( (n*n) / ( x * (x + 2) ) );
-        x += 2;
-    }
-  return Answer;  
- }
+float wallis_pi(int n)
+{
+int i;
+float k,ans=1.0;
+for(i=1;i<=n;i++)
+{
+k=(float)(4*i*i)/(4*i*i-1);
+ans=ans*k;
+}
+return(2*ans);
+}
   
     
 
